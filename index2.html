@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<h1 style="">ОЧКИ</h1>
+<h1  style="" class="ochko">100</h1>
+
+	<div  style="background-image: url(Antilop.jpg); height: 200px; width: 300px; background-size: 100% 100%;position: absolute;margin-left: 50px;margin-top: 300px;" class="anti"></div>
+	<div  style="background-image: url(begemot.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute;margin-left: 1250px;margin-top:200px;  "class="beg"></div>
+	<div style="background-image: url(elephant.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute;margin-left: 390px;margin-top:50px;  "class="ele"></div>
+	<div  style="background-image: url(giena.jpg); height: 200px; width: 300px; background-size: 100% 100%;position: absolute;margin-left: 350px;margin-top:300px;  "class="gie">
+	</div>
+	<div  style="background-image: url(jiraf.jpg); height: 200px; width: 300px; background-size: 100% 100%;position: absolute;margin-left: 800px;margin-top:400px;  " class="jir"></div>
+	<div  style="background-image: url(korova.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute;margin-left: 15px;margin-top:500px; "class="kor"></div>
+	<div style="background-image: url(lion.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute;margin-left: 850px;margin-top:100px;  "class="leo">
+	</div>
+	<div  style="background-image: url(nosorog.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute;margin-left: 1200px; margin-top: 500px"class="nos"></div>
+	<div style="background-image: url(zebra.jpg); height: 200px; width: 300px; background-size: 100% 100%;position: absolute;margin-left: 105px;margin-top: 100px;"class="zeb"></div>
+
+
+<div style="display: none" class="dis">
+	
+	<h2 style="">Где спрятан JIRAF?</h2>
+</div> 
+
+
+
+
+
+<script>
+	let ochko = 100;
+	let blo = function(){
+		document.querySelector(".anti").style.display="block";
+		document.querySelector(".beg").style.display="block";
+		document.querySelector(".ele").style.display="block";
+		document.querySelector(".gie").style.display="block";
+		document.querySelector(".jir").style.display="block";
+		document.querySelector(".kor").style.display="block";
+		document.querySelector(".leo").style.display="block";
+		document.querySelector(".zeb").style.display="block";
+		document.querySelector(".nos").style.display="block";
+		document.querySelector(".dis").style.display="none";
+	}
+	let fto = function(){
+		document.querySelector(".anti").style.background="black";
+		document.querySelector(".beg").style.background="black";
+		document.querySelector(".ele").style.background="black";
+		document.querySelector(".gie").style.background="black";
+		document.querySelector(".jir").style.background="black";
+		document.querySelector(".kor").style.background="black";
+		document.querySelector(".leo").style.background="black";
+		document.querySelector(".zeb").style.background="black";
+		document.querySelector(".nos").style.background="black";
+		document.querySelector(".dis").style.display="block";
+	}
+	setTimeout(fto,1000);
+	document.querySelector(".anti").onclick=function(){
+		alert("ВАААААТ");
+		document.querySelector(".anti").style.backgroundImage="url(Antilop.jpg)";
+		document.querySelector(".anti").style.backgroundSize="100% 100%"
+	} 
+	document.querySelector(".beg").onclick=function(){
+		alert("эээээээээээээ");
+		document.querySelector(".beg").style.backgroundImage="url(begemot.jpg)";
+		document.querySelector(".beg").style.backgroundSize="100% 100%";
+	} 
+	document.querySelector(".ele").onclick=function(){
+		alert("и не это");
+		document.querySelector(".ele").style.backgroundImage="url(elephant.jpg)";
+		document.querySelector(".ele").style.backgroundSize="100% 100%";
+	} 
+	document.querySelector(".gie").onclick=function(){
+		alert("нето");
+		document.querySelector(".gie").style.backgroundImage="url(giena.jpg)";
+		document.querySelector(".gie").style.backgroundSize="100% 100%";
+	} 
+	document.querySelector(".jir").onclick=function(){
+		alert("Молодес");
+		document.querySelector(".jir").style.backgroundImage="url(jiraf.jpg)";
+		document.querySelector(".jir").style.backgroundSize="100% 100%";
+		ochko=ochko+100;
+		document.querySelector(".ochko").innerHTML = ochko;
+	} 
+		
+	document.querySelector(".kor").onclick=function(){
+		alert("это неверно");
+		document.querySelector(".kor").style.backgroundImage="url(korova.jpg)";
+		document.querySelector(".kor").style.backgroundSize="100% 100%";
+	} 
+	document.querySelector(".leo").onclick=function(){
+		alert("ти долбоеб");
+		document.querySelector(".leo").style.backgroundImage="url(lion.jpg)";
+		document.querySelector(".leo").style.backgroundSize="100% 100%";
+	} 
+	document.querySelector(".zeb").onclick=function(){
+		alert("у тя склероз?");
+		document.querySelector(".zeb").style.backgroundImage="url(zebra.jpg)";
+		document.querySelector(".zeb").style.backgroundSize="100% 100%";
+	} 
+	document.querySelector(".nos").onclick=function(){
+		alert("ти шо ебобо?");
+		document.querySelector(".nos").style.backgroundImage="url(nosorog.jpg)";
+		document.querySelector(".nos").style.backgroundSize="100% 100%";
+	} 
+</script>	
+</body>
+</html>
